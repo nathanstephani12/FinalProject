@@ -1,0 +1,51 @@
+file,type,name,value
+contracts/kleros/KlerosLiquidExtraViews.sol,private,NOT_FOUND,uint(-1)
+contracts/kleros/Kleros.sol,uint,NON_PAYABLE_AMOUNT,(2**256 - 2) / 2
+contracts/kleros/Kleros.sol,uint,ALPHA_DIVISOR,1e4
+contracts/kleros/KlerosGovernor.sol,uint,NO_SHADOW_WINNER,uint(-1)
+contracts/kleros/KlerosGovernor.sol,uint,MULTIPLIER_DIVISOR,10000
+contracts/kleros/KlerosLiquid.sol,uint,MAX_STAKE_PATHS,4
+contracts/kleros/KlerosLiquid.sol,uint,MIN_JURORS,3
+contracts/kleros/KlerosLiquid.sol,uint,NON_PAYABLE_AMOUNT,(2 ** 256 - 2) / 2
+contracts/kleros/KlerosLiquid.sol,uint,ALPHA_DIVISOR,1e4
+contracts/standard/arbitration/MultipleArbitrableTransaction.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/MultipleArbitrableTransaction.sol,uint8,SENDER_WINS,1
+contracts/standard/arbitration/MultipleArbitrableTransaction.sol,uint8,RECEIVER_WINS,2
+contracts/standard/arbitration/MultipleArbitrableTokenTransactionWithAppeals.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/MultipleArbitrableTokenTransactionWithAppeals.sol,uint,MULTIPLIER_DIVISOR,10000
+contracts/standard/arbitration/CentralizedCourt.sol,uint,NOT_PAYABLE_VALUE,(2**256-2)/2
+contracts/standard/arbitration/TwoPartyArbitrable.sol,uint8,PARTY_A_WINS,1
+contracts/standard/arbitration/TwoPartyArbitrable.sol,uint8,PARTY_B_WINS,2
+contracts/standard/arbitration/TwoPartyArbitrable.sol,string,RULING_OPTIONS,"""Party A wins;Party B wins"""
+contracts/standard/arbitration/ArbitrableTransaction.sol,string,RULING_OPTIONS,"""Reimburse partyA;Pay partyB"""
+contracts/standard/arbitration/ArbitrableTransaction.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/ArbitrableKitty.sol,string,RULING_OPTIONS,"""Give to partyA;Give to partyB;Grant shared custody"""
+contracts/standard/arbitration/ArbitrableKitty.sol,uint8,SHARED_CUSTODY,3
+contracts/standard/arbitration/ArbitrableKitty.sol,uint8,AMOUNT_OF_CHOICES,3
+contracts/standard/arbitration/ArbitrableKitty.sol,uint256,CUSTODY_TIME,1 weeks
+contracts/standard/arbitration/Rental.sol,string,RULING_OPTIONS,"""Rule for party A (renter);Rule for Party B (owner)"""
+contracts/standard/arbitration/Rental.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/MultipleArbitrableTransactionWithAppeals.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/MultipleArbitrableTransactionWithAppeals.sol,uint,MULTIPLIER_DIVISOR,10000
+contracts/standard/arbitration/MultipleArbitrableTokenTransaction.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/CentralizedArbitrator.sol,uint,NOT_PAYABLE_VALUE,(2**256-2)/2
+contracts/standard/arbitration/ArbitrableDeposit.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/ArbitrableDeposit.sol,uint8,OWNER_WINS,1
+contracts/standard/arbitration/ArbitrableDeposit.sol,uint8,CLAIMANT_WINS,2
+contracts/standard/arbitration/ArbitrableDeposit.sol,string,RULING_OPTIONS,"""Owner wins;Claimant wins"""
+contracts/standard/arbitration/MultipleArbitrableTransactionWithFee.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/MultipleArbitrableTransactionWithFee.sol,uint8,SENDER_WINS,1
+contracts/standard/arbitration/MultipleArbitrableTransactionWithFee.sol,uint8,RECEIVER_WINS,2
+contracts/standard/arbitration/AutoAppealableArbitrator.sol,uint,NOT_PAYABLE_VALUE,(2**256 - 2) / 2
+contracts/standard/arbitration/MultipleArbitrableTokenTransactionWithFee.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/ArbitrableTokens/FundingVault.sol,uint8,AMOUNT_OF_CHOICES,2
+contracts/standard/arbitration/ArbitrableTokens/FundingVault.sol,uint8,TEAM_WINS,1
+contracts/standard/arbitration/ArbitrableTokens/FundingVault.sol,uint8,HOLDERS_WINS,2
+contracts/standard/arbitration/ArbitrableTokens/LockedToken.sol,uint,LOCK_DIVISOR,1E6
+contracts/standard/permission/ArbitrableAddressList.sol,uint,MULTIPLIER_DIVISOR,10000
+contracts/standard/permission/ArbitrablePermissionList.sol,uint8,REGISTER,1
+contracts/standard/permission/ArbitrablePermissionList.sol,uint8,CLEAR,2
+contracts/standard/permission/ArbitrableTokenList.sol,uint,MULTIPLIER_DIVISOR,10000
+contracts/standard/rng/BeaconRNG.sol,uint,LOOKAHEAD,132
+contracts/standard/rng/BeaconRNG.sol,uint,ERROR,32
+contracts/standard/proxy/RealitioArbitratorProxy.sol,uint,NUMBER_OF_CHOICES_FOR_ARBITRATOR,(2 ** 256) - 2
