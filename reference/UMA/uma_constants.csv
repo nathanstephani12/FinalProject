@@ -1,0 +1,56 @@
+file,type,name,value
+optimistic-governor/implementation/OptimisticGovernor.sol,bytes,PROPOSAL_HASH_KEY,"""proposalHash"""
+optimistic-governor/implementation/OptimisticGovernor.sol,bytes,EXPLANATION_KEY,"""explanation"""
+optimistic-governor/implementation/OptimisticGovernor.sol,bytes,RULES_KEY,"""rules"""
+external/avm/AVM_CrossDomainEnabled.sol,uint160,offset,uint160(0x1111000000000000000000000000000000001111)
+external/chainbridge/Bridge.sol,bytes32,RELAYER_ROLE,"keccak256(""RELAYER_ROLE"")"
+optimistic-oracle-v3/implementation/OptimisticOracleV3.sol,bytes32,defaultIdentifier,"""ASSERT_TRUTH"""
+optimistic-oracle-v3/implementation/OptimisticOracleV3.sol,int256,numericalTrue,1e18
+optimistic-oracle-v3/implementation/examples/Insurance.sol,uint64,assertionLiveness,7200
+optimistic-oracle-v3/implementation/examples/DataAsserter.sol,uint64,assertionLiveness,7200
+optimistic-oracle-v3/implementation/examples/PredictionMarket.sol,uint64,assertionLiveness,7200
+optimistic-oracle-v3/implementation/examples/PredictionMarket.sol,bytes,unresolvable,"""Unresolvable"""
+optimistic-oracle-v3/implementation/escalation-manager/FullPolicyEscalationManager.sol,int256,numericalTrue,1e18
+optimistic-oracle-v2/implementation/OptimisticOracleV2.sol,private,MAX_ADDED_ANCILLARY_DATA,53
+optimistic-oracle-v2/implementation/OptimisticOracleV2.sol,uint256,OO_ANCILLARY_DATA_LIMIT,ancillaryBytesLimit - MAX_ADDED_ANCILLARY_DATA
+optimistic-oracle-v2/implementation/OptimisticOracleV2.sol,int256,TOO_EARLY_RESPONSE,type(int256).min
+optimistic-oracle-v2/interfaces/OptimisticOracleInterface.sol,uint256,ancillaryBytesLimit,8192
+optimistic-oracle-v2/interfaces/SkinnyOptimisticOracleInterface.sol,uint256,ancillaryBytesLimit,8192
+optimistic-oracle-v2/interfaces/SkinnyOptimisticOracleV2Interface.sol,uint256,ancillaryBytesLimit,8192
+optimistic-oracle-v2/interfaces/OptimisticOracleV2Interface.sol,uint256,ancillaryBytesLimit,8192
+common/implementation/FixedPoint.sol,private,FP_SCALING_FACTOR,10**18
+common/implementation/FixedPoint.sol,private,SFP_SCALING_FACTOR,10**18
+common/implementation/dsproxy/DSGuardFactory.sol,bytes32,ANY,bytes32(type(uint256).max)
+common/test/BasicERC20.sol,private,MAX_UINT256,2**256 - 1
+data-verification-mechanism/implementation/VotingV2.sol,uint64,UINT64_MAX,type(uint64).max
+data-verification-mechanism/implementation/VotingV2.sol,uint256,ANCILLARY_BYTES_LIMIT,8192
+data-verification-mechanism/implementation/Store.sol,uint256,SECONDS_PER_WEEK,604800
+data-verification-mechanism/implementation/Voting.sol,private,UINT_MAX,~uint256(0)
+data-verification-mechanism/implementation/Voting.sol,uint256,ancillaryBytesLimit,8192
+data-verification-mechanism/implementation/Constants.sol,bytes32,Oracle,"""Oracle"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,IdentifierWhitelist,"""IdentifierWhitelist"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,Store,"""Store"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,FinancialContractsAdmin,"""FinancialContractsAdmin"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,Registry,"""Registry"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,CollateralWhitelist,"""CollateralWhitelist"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,OptimisticOracle,"""OptimisticOracle"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,OptimisticOracleV2,"""OptimisticOracleV2"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,OptimisticOracleV3,"""OptimisticOracleV3"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,Bridge,"""Bridge"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,GenericHandler,"""GenericHandler"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,SkinnyOptimisticOracle,"""SkinnyOptimisticOracle"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,ChildMessenger,"""ChildMessenger"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,OracleHub,"""OracleHub"""
+data-verification-mechanism/implementation/Constants.sol,bytes32,OracleSpoke,"""OracleSpoke"""
+data-verification-mechanism/implementation/Constants.sol,uint256,ancillaryBytesLimit,8192
+data-verification-mechanism/implementation/test/PriceIdentifierSlashingLibaryTest.sol,bytes32,whiteListedIdentifier,"""SAFE_NO_VOTE"""
+data-verification-mechanism/implementation/test/PriceIdentifierSlashingLibaryTest.sol,uint256,slashPerToken,0.0016e18
+financial-templates/optimistic-distributor/OptimisticDistributor.sol,uint256,ANCILLARY_BYTES_RESERVE,512
+financial-templates/optimistic-distributor/OptimisticDistributor.sol,uint256,MINIMUM_LIVENESS,10 minutes
+financial-templates/optimistic-distributor/OptimisticDistributor.sol,uint256,MAXIMUM_LIVENESS,5200 weeks
+proxy-scripts/uniswap-broker/UniswapV3Broker.sol,internal,MIN_TICK,-887272
+proxy-scripts/uniswap-broker/UniswapV3Broker.sol,internal,MAX_TICK,-MIN_TICK
+proxy-scripts/uniswap-broker/UniswapV3Broker.sol,internal,MIN_SQRT_RATIO,4295128739
+proxy-scripts/uniswap-broker/UniswapV3Broker.sol,internal,MAX_SQRT_RATIO,1461446703485210103287273052203988822378723970342
+proxy-scripts/uniswap-broker/UniswapV3Broker.sol,internal,RESOLUTION,96
+proxy-scripts/uniswap-broker/UniswapV3Broker.sol,internal,Q96,0x1000000000000000000000000
