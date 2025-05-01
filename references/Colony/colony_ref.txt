@@ -1,0 +1,3 @@
+Colony network https://github.com/JoinColony/colonyNetwork
+Token contract https://etherscan.io/token/0x3e828ac5c480069d4765654fb4b8733b910b13b2
+Docs https://docs.colony.io/colonynetwork/

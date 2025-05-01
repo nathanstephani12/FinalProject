@@ -1,0 +1,9 @@
+Arbitration standard https://docs.kleros.io/developer/arbitration-development/erc-792-arbitration-standard
+Primary contract https://github.com/kleros/kleros/blob/master/contracts/kleros/KlerosLiquid.sol
+Juror Selection https://github.com/kleros/kleros/blob/master/contracts/data-structures/SortitionSumTreeFactory.sol
+Deployments https://docs.kleros.io/developer/deployment-addresses
+Arbitration by example https://docs.kleros.io/developer/arbitration-by-example?utm_source=chatgpt.com
+Docs https://docs.kleros.io/
+Github https://github.com/kleros
+Token contract https://etherscan.io/token/0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d
+Kleros liquid https://etherscan.io/address/0x988b3a538b618c7a603e1c11ab82cd16dbe28069

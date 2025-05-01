@@ -1,0 +1,3 @@
+Oracle docs https://docs.uma.xyz/protocol-overview/how-does-umas-oracle-work
+Token contract https://etherscan.io/token/0x04fa0d235c4abf4bcf4787af4cf447de572ef828#code
+Quick start https://docs.uma.xyz/resources/optimistic-oracle/getting-started
