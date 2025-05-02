@@ -1,0 +1,10 @@
+Bond vs. Time to Settlement:
+  Slope: 0.0097
+  Intercept: 22.2636
+  R^2: 0.0757
+
+Bond vs. Time to Dispute:
+  Slope: 0.0090
+  Intercept: -12.3816
+  R^2: 0.3468
+

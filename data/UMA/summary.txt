@@ -1,0 +1,60 @@
+UMA Dispute Statistics:
+Averages:
+  Total assertions: 837
+  Disputed assertions: 5 (0.60%)
+  Average bond: 1568.1980USD
+  Average bond (undisputed only): 1559.2816 USD
+  Average bond (disputed only): 3051.8971 USD
+  Average time to dispute (if disputed): 54192.00 sec
+  Average time to settlement (if settled): 134810.62 sec
+  Asserter win rate (all settled): 99.52%
+  Disputer win rate (all settled): 0.48%
+  Asserter win rate (disputed only): 20.00%
+  Disputer win rate (disputed only): 80.00%
+
+Distributions:
+Currency Symbol Distribution:
+  USDC: 649
+  WETH: 185
+  FOX: 2
+  INDEX: 1
+
+Bond Distribution (Overall):
+  Min bond: 210.0000 USD
+  Max bond: 18446.9930 USD
+  Mean bond: 1568.1980 USD
+  Std Dev: 2571.4437 USD
+  Median bond: 599.9400 USD
+
+Bond Distribution by Currency Symbol:
+  FOX:
+    Min: 2900.0000 USD
+    Max: 2900.0000 USD
+    Mean: 2900.0000 USD
+    Std: 0.0000 USD
+    Median: 2900.0000 USD
+  INDEX:
+    Min: 210.0000 USD
+    Max: 210.0000 USD
+    Mean: 210.0000 USD
+    Std: nan USD
+    Median: 210.0000 USD
+  USDC:
+    Min: 499.9500 USD
+    Max: 9999.0000 USD
+    Mean: 662.0293 USD
+    Std: 739.9497 USD
+    Median: 599.9400 USD
+  WETH:
+    Min: 498.0688 USD
+    Max: 18446.9930 USD
+    Mean: 4740.0795 USD
+    Std: 3882.4704 USD
+    Median: 3689.3986 USD
+
+Settlement Time Distribution (Settled Only):
+  Min time to settlement: 660.00 sec
+  Max time to settlement: 8893896.00 sec
+  Mean time to settlement: 134810.62 sec
+  Std Dev: 326358.10 sec
+  Median time to settlement: 86568.00 sec
