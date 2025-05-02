@@ -27,7 +27,7 @@ step = 100000
 # Juror count: disputeID -> count
 juror_counts = defaultdict(int)
 eth_rewards = defaultdict(int)
-
+appeals = defaultdict(int)
 # Fetch and decode logs in chunks
 if sys.argv[1] == "--fetch": 
     for block_start in range(start_block, end_block, step):
@@ -44,6 +44,9 @@ if sys.argv[1] == "--fetch":
             for log in draw_logs:
                 dispute_id = int(log["topics"][2].hex(), 16)
                 juror_counts[dispute_id] += 1
+                data_bytes = bytes(log["data"][2:])
+                appeal = int.from_bytes(data_bytes[:32], byteorder="big") // (2**16)
+                appeals[dispute_id] = max(appeals[dispute_id], appeal)
         except Exception as e:
             print(f"⚠️ Draw log error: {e}")
 
@@ -66,23 +69,31 @@ if sys.argv[1] == "--fetch":
         json.dump(juror_counts, f)
     with open("eth_rewards.json", "w") as f:
         json.dump(eth_rewards, f)
+    with open("appeals.json", "w") as f:
+        json.dump(appeals, f)
 elif sys.argv[1] == "--no-fetch":
     with open("juror_counts.json", "r") as f:
         juror_counts = json.load(f)
     with open("eth_rewards.json", "r") as f:
         eth_rewards = json.load(f)
+    with open("appeals.json", "r") as f:
+        appeals = json.load(f)
 
 # Combine results
 rows = []
 for dispute_id in sorted(set(juror_counts.keys()) | set(eth_rewards.keys())):
-    jurors = juror_counts.get(dispute_id, 0)
     arbitration_cost = eth_rewards.get(dispute_id, 0) / 1e18
+    jurors = juror_counts.get(dispute_id, 0)
     cost_per_juror = round(arbitration_cost / jurors, 4)
+    appeal_count = appeals.get(dispute_id, 0)
+    cost_per_appeal = round(arbitration_cost / (appeal_count + 1), 4)
     rows.append({
         "disputeNumber": dispute_id,
-        "jurorCount": jurors,
         "arbitrationCost": arbitration_cost,
-        "costPerJuror": cost_per_juror
+        "jurorCount": jurors,
+        "costPerJuror": cost_per_juror,
+        "appealCount": appeal_count,
+        "costPerAppeal": cost_per_appeal
     })
 
 df = pd.DataFrame(rows)
