@@ -1,0 +1,143 @@
+file,type,name,value
+contracts/testHelpers/VotingReputationMisaligned.sol,uint256,UINT128_MAX,2 ** 128 - 1
+contracts/testHelpers/VotingReputationMisaligned.sol,uint256,NAY,0
+contracts/testHelpers/VotingReputationMisaligned.sol,uint256,YAY,1
+contracts/testHelpers/VotingReputationMisaligned.sol,uint256,STAKE_END,0
+contracts/testHelpers/VotingReputationMisaligned.sol,uint256,SUBMIT_END,1
+contracts/testHelpers/VotingReputationMisaligned.sol,uint256,REVEAL_END,2
+contracts/testHelpers/ERC20PresetMinterPauser.sol,bytes32,PAUSER_ROLE,"keccak256(""PAUSER_ROLE"")"
+contracts/testHelpers/ERC20PresetMinterPauser.sol,bytes32,MINTER_ROLE,"keccak256(""MINTER_ROLE"")"
+contracts/colonyNetwork/ColonyNetworkExtensions.sol,bytes4,IDENTIFIER_SIG,"bytes4(keccak256(""identifier()""))"
+contracts/colonyNetwork/ColonyNetworkExtensions.sol,bytes4,VERSION_SIG,"bytes4(keccak256(""version()""))"
+contracts/colonyNetwork/ColonyNetworkSkills.sol,int256,DECAY_NUMERATOR,999679150010889
+contracts/colonyNetwork/ColonyNetworkSkills.sol,int256,DECAY_DENOMINATOR,1000000000000000
+contracts/colonyNetwork/ColonyNetworkSkills.sol,uint256,DECAY_PERIOD,1 hours
+contracts/colonyNetwork/ColonyNetworkAuction.sol,uint,TOKEN_MULTIPLIER,10 ** 18
+contracts/colonyNetwork/ColonyNetworkStorage.sol,uint256,METATRANSACTION_NONCES_SLOT,41
+contracts/colonyNetwork/ColonyNetworkMining.sol,uint256,T,7776000 * WAD
+contracts/colonyNetwork/ColonyNetworkMining.sol,uint256,N,24 * WAD
+contracts/colonyNetwork/ColonyNetworkMining.sol,uint256,UINT32_MAX,4294967295
+contracts/colonyNetwork/ColonyNetworkMining.sol,uint256,MAX_MINERS,12
+contracts/colonyNetwork/ColonyNetworkMining.sol,uint256,UINT192_MAX,2 ** 192 - 1
+contracts/colonyNetwork/ColonyNetworkDeployer.sol,address,CREATEX_ADDRESS,0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed
+contracts/colonyNetwork/ColonyNetworkENS.sol,bytes32,USER_HASH,"keccak256(""user"")"
+contracts/colonyNetwork/ColonyNetworkENS.sol,bytes32,COLONY_HASH,"keccak256(""colony"")"
+contracts/colonyNetwork/ColonyNetworkENS.sol,bytes4,INTERFACE_META_ID,0x01ffc9a7
+contracts/colonyNetwork/ColonyNetworkENS.sol,bytes4,ADDR_INTERFACE_ID,0x3b3b57de
+contracts/patriciaTree/Bits.sol,internal,ONE,uint(1)
+contracts/metaTxToken/MetaTxToken.sol,string,EIP_712_PREFIX,"""\x19\x01"""
+contracts/colony/ColonyStorage.sol,uint256,COLONY_NETWORK_SLOT,6
+contracts/colony/ColonyStorage.sol,uint256,ROOT_LOCAL_SKILL_SLOT,36
+contracts/colony/ColonyStorage.sol,uint256,METATRANSACTION_NONCES_SLOT,35
+contracts/colony/ColonyStorage.sol,uint256,MAX_PAYOUT,2 ** 128 - 1
+contracts/colony/ColonyStorage.sol,bytes32,BYTES32_1,bytes32(uint256(1))
+contracts/colony/ColonyArbitraryTransaction.sol,bytes4,APPROVE_SIG,"bytes4(keccak256(""approve(address,uint256)""))"
+contracts/colony/ColonyArbitraryTransaction.sol,bytes4,TRANSFER_SIG,"bytes4(keccak256(""transfer(address,uint256)""))"
+contracts/colony/ColonyArbitraryTransaction.sol,bytes4,TRANSFER_FROM_SIG,"bytes4(keccak256(""transferFrom(address,address,uint256)""))"
+contracts/colony/ColonyArbitraryTransaction.sol,bytes4,BURN_SIG,"bytes4(keccak256(""burn(uint256)""))"
+contracts/colony/ColonyArbitraryTransaction.sol,bytes4,BURN_GUY_SIG,"bytes4(keccak256(""burn(address,uint256)""))"
+contracts/colony/ColonyAuthority.sol,uint8,FUNDING_ROLE,uint8(ColonyDataTypes.ColonyRole.Funding)
+contracts/colony/ColonyAuthority.sol,uint8,ADMINISTRATION_ROLE,uint8(ColonyDataTypes.ColonyRole.Administration)
+contracts/colony/ColonyAuthority.sol,uint8,ARBITRATION_ROLE,uint8(ColonyDataTypes.ColonyRole.Arbitration)
+contracts/colony/ColonyAuthority.sol,uint8,ARCHITECTURE_ROLE,uint8(ColonyDataTypes.ColonyRole.Architecture)
+contracts/colony/ColonyAuthority.sol,uint8,ROOT_ROLE,uint8(ColonyDataTypes.ColonyRole.Root)
+contracts/colony/ColonyFunding.sol,int256,MAX_PAYOUT_MODIFIER,int256(WAD)
+contracts/colony/ColonyFunding.sol,int256,MIN_PAYOUT_MODIFIER,-int256(WAD)
+contracts/colony/ColonyExpenditure.sol,int256,MAX_PAYOUT_MODIFIER,int256(WAD)
+contracts/colony/ColonyExpenditure.sol,int256,MIN_PAYOUT_MODIFIER,-int256(WAD)
+contracts/colony/ColonyExpenditure.sol,uint256,EXPENDITURES_SLOT,25
+contracts/colony/ColonyExpenditure.sol,uint256,EXPENDITURESLOTS_SLOT,26
+contracts/colony/ColonyExpenditure.sol,bool,MAPPING,false
+contracts/colony/ColonyExpenditure.sol,bool,ARRAY,true
+contracts/colony/ColonyExpenditure.sol,uint256,MAX_ARRAY,1024
+contracts/common/ContractRecovery.sol,uint8,RECOVERY_ROLE,uint8(ColonyDataTypes.ColonyRole.Recovery)
+contracts/common/CommonAuthority.sol,uint8,RECOVERY_ROLE,uint8(ColonyDataTypes.ColonyRole.Recovery)
+contracts/common/CommonStorage.sol,uint256,UINT256_MAX,2 ** 256 - 1
+contracts/common/CommonStorage.sol,uint256,AUTHORITY_SLOT,0
+contracts/common/CommonStorage.sol,uint256,OWNER_SLOT,1
+contracts/common/CommonStorage.sol,uint256,RESOLVER_SLOT,2
+contracts/common/CommonStorage.sol,bytes32,PROTECTED,"keccak256(""Recovery Mode Protected Slot"")"
+contracts/common/GetActionSummary.sol,bytes4,MULTICALL,"bytes4(keccak256(""multicall(bytes[])""))"
+contracts/common/Multicall.sol,bytes4,MULTICALL_SIG,"bytes4(keccak256(""multicall(bytes[])""))"
+contracts/common/MetaTransactionMsgSender.sol,bytes32,METATRANSACTION_FLAG,"keccak256(""METATRANSACTION"")"
+contracts/common/MetaTransactionMsgSender.sol,uint256,METATRANSACTION_DATA_MIN_LENGTH,32 + 20
+contracts/common/TokenAuthority.sol,bytes4,BURN_FUNC_SIG,"bytes4(keccak256(""burn(uint256)""))"
+contracts/common/TokenAuthority.sol,bytes4,BURN_OVERLOAD_FUNC_SIG,"bytes4(keccak256(""burn(address,uint256)""))"
+contracts/common/EtherRouterCreate3.sol,address,CREATEX_ADDRESS,0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_ROUND,0
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_IDX,1
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_REPUTATION_BRANCH_MASK,2
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_AGREE_STATE_NLEAVES,3
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_AGREE_STATE_BRANCH_MASK,4
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_DISAGREE_STATE_NLEAVES,5
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_DISAGREE_STATE_BRANCH_MASK,6
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_LOG_ENTRY_NUMBER,7
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_DECAY_TRANSITION,8
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_USER_ORIGIN_SKILL_REPUTATION_BRANCH_MASK,9
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_AGREE_STATE_REPUTATION_VALUE,10
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_AGREE_STATE_REPUTATION_UID,11
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_DISAGREE_STATE_REPUTATION_VALUE,12
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_DISAGREE_STATE_REPUTATION_UID,13
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_USER_ORIGIN_REPUTATION_VALUE,14
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_USER_ORIGIN_REPUTATION_UID,15
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_CHILD_REPUTATION_BRANCH_MASK,16
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_CHILD_REPUTATION_VALUE,17
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_CHILD_REPUTATION_UID,18
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_GLOBAL_CHILD_UPDATE,19
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_ADJACENT_REPUTATION_BRANCH_MASK,20
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_ADJACENT_REPUTATION_VALUE,21
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_ADJACENT_REPUTATION_UID,22
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_NEW_REPUTATION,23
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_USER_ORIGIN_ADJACENT_REPUTATION_VALUE,24
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,U_CHILD_ADJACENT_REPUTATION_VALUE,25
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,B_REPUTATION_KEY_COLONY,0
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,B_REPUTATION_KEY_SKILLID,1
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,B_REPUTATION_KEY_USER,2
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,B_REPUTATION_KEY_HASH,3
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,B_ADJACENT_REPUTATION_KEY_HASH,4
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,B_ORIGIN_ADJACENT_REPUTATION_KEY_HASH,5
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,B_CHILD_ADJACENT_REPUTATION_KEY_HASH,6
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,DECAY_NUMERATOR,999679150010889
+contracts/reputationMiningCycle/ReputationMiningCycleRespond.sol,uint,DECAY_DENOMINATOR,1000000000000000
+contracts/reputationMiningCycle/ReputationMiningCycleStorage.sol,int256,MAX_INT128,2 ** 127 - 1
+contracts/reputationMiningCycle/ReputationMiningCycleStorage.sol,int256,MIN_INT128,(2 ** 127) * (-1)
+contracts/reputationMiningCycle/ReputationMiningCycleCommon.sol,uint256,MIN_STAKE,2000 * WAD
+contracts/reputationMiningCycle/ReputationMiningCycleCommon.sol,uint256,MINING_WINDOW_SIZE,60 * 60 * 1
+contracts/reputationMiningCycle/ReputationMiningCycleCommon.sol,uint256,ALL_ENTRIES_ALLOWED_END_OF_WINDOW,60 * 10
+contracts/reputationMiningCycle/ReputationMiningCycleCommon.sol,uint256,UINT256_MAX,2 ** 256 - 1
+contracts/reputationMiningCycle/ReputationMiningCycleCommon.sol,uint256,CHALLENGE_RESPONSE_WINDOW_DURATION,60 * 20
+contracts/reputationMiningCycle/ReputationMiningCycle.sol,uint256,X,UINT256_MAX / (MINING_WINDOW_SIZE - ALL_ENTRIES_ALLOWED_END_OF_WINDOW)
+contracts/extensions/FundingQueue.sol,uint256,HEAD,0
+contracts/extensions/FundingQueue.sol,uint256,STAKE_FRACTION,WAD / 1000
+contracts/extensions/FundingQueue.sol,uint256,COOLDOWN_PERIOD,14 days
+contracts/extensions/ReputationBootstrapper.sol,uint256,INT128_MAX,2 ** 127 - 1
+contracts/extensions/ReputationBootstrapper.sol,uint256,SECURITY_DELAY,1 hours
+contracts/extensions/OneTxPayment.sol,ColonyRole,ADMINISTRATION,ColonyDataTypes.ColonyRole.Administration
+contracts/extensions/OneTxPayment.sol,ColonyRole,FUNDING,ColonyDataTypes.ColonyRole.Funding
+contracts/extensions/OneTxPayment.sol,ColonyRole,ARBITRATION,ColonyDataTypes.ColonyRole.Arbitration
+contracts/extensions/OneTxPayment.sol,bool,ARRAY,true
+contracts/extensions/OneTxPayment.sol,uint256,EXPENDITURES_SLOT,25
+contracts/extensions/OneTxPayment.sol,bytes32,CLAIM_DELAY_OFFSET,bytes32(uint256(4))
+contracts/extensions/EvaluatedExpenditure.sol,uint256,EXPENDITURESLOTS_SLOT,26
+contracts/extensions/EvaluatedExpenditure.sol,uint256,PAYOUT_MODIFIER_OFFSET,2
+contracts/extensions/EvaluatedExpenditure.sol,bool,MAPPING,false
+contracts/extensions/EvaluatedExpenditure.sol,bool,ARRAY,true
+contracts/extensions/ColonyExtension.sol,uint256,UINT256_MAX,2 ** 256 - 1
+contracts/extensions/ColonyExtension.sol,address,FULL_ADDRESS,0xFFfFfFffFFfffFFfFFfFFFFFffFFFffffFfFFFfF
+contracts/extensions/StreamingPayments.sol,uint256,SLOT,0
+contracts/extensions/StreamingPayments.sol,ColonyRole,ADMINISTRATION,ColonyDataTypes.ColonyRole.Administration
+contracts/extensions/StreamingPayments.sol,ColonyRole,FUNDING,ColonyDataTypes.ColonyRole.Funding
+contracts/extensions/TokenSupplier.sol,uint256,ISSUANCE_PERIOD,1 days
+contracts/extensions/StakedExpenditure.sol,uint256,EXPENDITURE_SLOT,25
+contracts/extensions/StakedExpenditure.sol,bool,ARRAY,true
+contracts/extensions/votingReputation/VotingReputationMisalignedRecovery.sol,uint256,UINT128_MAX,2 ** 128 - 1
+contracts/extensions/votingReputation/VotingReputationMisalignedRecovery.sol,uint256,NAY,0
+contracts/extensions/votingReputation/VotingReputationMisalignedRecovery.sol,uint256,YAY,1
+contracts/extensions/votingReputation/VotingReputationStorage.sol,uint256,UINT128_MAX,2 ** 128 - 1
+contracts/extensions/votingReputation/VotingReputationStorage.sol,uint256,NAY,0
+contracts/extensions/votingReputation/VotingReputationStorage.sol,uint256,YAY,1
+contracts/extensions/votingReputation/VotingReputationStorage.sol,uint256,STAKE_END,0
+contracts/extensions/votingReputation/VotingReputationStorage.sol,uint256,SUBMIT_END,1
+contracts/extensions/votingReputation/VotingReputationStorage.sol,uint256,REVEAL_END,2
+contracts/extensions/votingReputation/VotingReputationStorage.sol,uint256,LOCK_DELAY,10 * 365 days
+contracts/extensions/votingReputation/VotingReputationStorage.sol,bytes4,NO_ACTION,0x12345678
