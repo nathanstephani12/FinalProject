@@ -1,0 +1,50 @@
+Statistic for 'arbitrationCost':
+  Mean:   0.2449
+  Median: 0.07
+  Mode:   0.025
+  Min:    0.0
+  Max:    41.0
+
+Statistic for 'jurorCount':
+  Mean:   4.5337
+  Median: 3.0
+  Mode:   3
+  Min:    1
+  Max:    500
+
+Statistic for 'costPerJuror':
+  Mean:   0.0379
+  Median: 0.028
+  Mode:   0.028
+  Min:    0.0
+  Max:    0.59
+
+Statistic for 'appealCount':
+  Mean:   0.106
+  Median: 0.0
+  Mode:   0
+  Min:    0
+  Max:    5
+
+Statistic for 'costPerAppeal':
+  Mean:   0.1841
+  Median: 0.057
+  Mode:   0.025
+  Min:    0.0
+  Max:    41.0
+
+Appeals vs Jurors:
+    Slope: 13.6970
+    Intercept: 3.08
+    R-squared: 0.0902
+
+Appeals vs Cost:
+    Slope: 0.9602
+    Intercept: 0.14
+    R-squared: 0.0631
+
+Jurors vs Cost:
+    Slope: 0.0718
+    Intercept: -0.08
+    R-squared: 0.7353
+
