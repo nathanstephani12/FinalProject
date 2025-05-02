@@ -1,0 +1,53 @@
+{
+  "title": "Add a tag to Address Tags",
+  "description": "Someone requested to add a tag to Address Tags",
+  "rulingOptions": {
+    "titles": [
+      "Yes, Add It",
+      "No, Don't Add It"
+    ],
+    "descriptions": [
+      "Select this if you think the tag complies with the required criteria and should be added.",
+      "Select this if you think the tag does not comply with the required criteria and should not be added."
+    ]
+  },
+  "category": "Curated Lists",
+  "question": "Does the tag comply with the required criteria?",
+  "fileURI": "/ipfs/QmVWvREUGN3VBZUAtBUgiJAQfp24uW93Q87HmAgdUB1yL3/address-tags-list-guidelines.pdf",
+  "evidenceDisplayInterfaceURI": "/ipfs/QmQjJio59WkrQDzPC5kSP3EiGaqrWxjGfkvhmD2mWwm41M/index.html",
+  "metadata": {
+    "tcrTitle": "Address Tags",
+    "tcrDescription": "A list of public name tags, associated with Ethereum mainnet contract addresses.",
+    "columns": [
+      {
+        "label": "Public Name Tag",
+        "description": "The Public Name tag of a contract address indicates a commonly-used name of the smart contract and clearly identifies it to avoid potential confusion. (e.g. Eth2 Deposit Contract).",
+        "type": "text",
+        "isIdentifier": true
+      },
+      {
+        "label": "Contract Address",
+        "description": "The Ethereum mainnet hexadecimal address of the smart contract being tagged.",
+        "type": "address",
+        "isIdentifier": true
+      },
+      {
+        "label": "UI/Website Link",
+        "description": "The URL of the most popular user interface used to interact with the contract tagged or the URL of the official website of the contract deployer (e.g. https://launchpad.ethereum.org/en/).",
+        "type": "link",
+        "isIdentifier": true
+      },
+      {
+        "label": "Public Note",
+        "description": "The Public Note is a short, mandatory comment field used to add a comment/information about the contract that could not fit in the public name tag (e.g. Official Ethereum 2.0 Beacon Chain deposit contact address).",
+        "type": "text"
+      }
+    ],
+    "itemName": "tag",
+    "itemNamePlural": "tags",
+    "logoURI": "/ipfs/QmP1hU1LaheHVGxcSJWg5sC3g25vs5snam3qP1bVVAa7mT/address-tag-2-1.png",
+    "requireRemovalEvidence": true,
+    "isTCRofTCRs": false,
+    "relTcrDisabled": true
+  }
+}
