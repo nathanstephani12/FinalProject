@@ -1,0 +1,4 @@
+Average votes per juror: 11.308072487644152
+Median votes per juror: 2.0
+Average participation rate: 0.7044577723971204
+Median participation rate: 0.987012987012987
